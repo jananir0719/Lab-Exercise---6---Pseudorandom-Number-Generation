@@ -10,23 +10,6 @@ Implementation of Pseudorandom Number Generation Using Standard library.
 4. Generate a secure random token (hexadecimal): Use secrets.token_hex(nbytes) to generate a secure random token in hex format. The nbytes parameter specifies the number of bytes, and the result will be a string with twice that number of hex characters.
 5. Display or use the generated random values: Print or use the generated values for your cryptographic needs.
 
-# Program:
-```
-import random
-
-minimum = int(input("Enter minimum value: "))
-maximum = int(input("Enter maximum value: "))
-
-numbers = list(range(minimum, maximum + 1))
-
-random.shuffle(numbers)
-
-print("Random numbers between", minimum, "and", maximum, "are:")
-
-for num in numbers:
-    print(num, end=" ")
-```
-
 # Output:
 <img width="1451" height="735" alt="image" src="https://github.com/user-attachments/assets/d117ae5d-35ad-4869-935c-f1c690db5f2d" />
 
